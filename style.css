@@ -1,0 +1,406 @@
+*
+{
+	margin:0px;
+	padding:0px;
+	font-family:arial;
+	box-sizing: border-box;
+}
+.clearfix::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+html
+{
+	scroll-behavior: smooth;
+
+}
+/*----------------header code starts here---------------------*/
+#header
+{
+	width:100%;
+	padding-top: 20px;
+    min-height: 80px;
+	background-color: black;
+
+}
+#name
+{
+	width: 25%;
+	min-height: 50px;
+	color:cyan;
+	text-align: center;
+	line-height: 50px;
+	float:left;
+}
+#nav
+{
+	width: 75%;
+	min-height: 50px;
+	color:white;
+	float:right;
+	line-height: 50px;
+	text-decoration: none;
+}
+#nav a
+{
+	display: inline-block;
+	width:16%;
+	min-height: 50px;
+	color:white;
+	text-align: center;
+}
+#nav a:hover
+{
+	text-decoration:underline;
+	text-transform: .3s;
+	color:darksalmon;
+}
+/*--------------------about code statrs here------------*/
+#about
+{
+	width:100%;
+	min-height: 400px;
+	background-color: lightgrey;
+	color:black;
+
+}
+#about .inner
+{
+	width:80%;
+	min-height: 400px;
+	float:left;
+	margin-left:145px;
+}
+#about .inner #image
+{
+	width:20%;
+	min-height: 400px;
+	float:left;
+	text-align: center;
+	padding-top: 50px;
+	padding-left: 20px;
+}
+
+#about .inner #image img
+{
+	width:80%;
+	display:block;
+	float:left;
+	border: 10px solid black;
+	margin-bottom: 20px;
+    
+}
+#about .inner #image p
+{
+	text-align: center;
+	font-size: 24px;
+	color:black;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	
+}
+#about .inner #bio
+{
+	width:50%;
+	min-height: 400px;
+	text-align: center;
+	padding-left:50px;
+	padding-right: 20px;
+	float:right;
+}
+#about .inner #bio
+{
+	width:80%;
+	min-height: 400px;
+	float:left;
+	padding-top: 50px;
+}
+#about .inner #bio h2
+{
+	margin-bottom: 20px;
+}
+#about .inner #bio p
+{
+	text-align: justify;
+	font-size: 18px;
+	padding-bottom: 80px;
+}
+#about .inner #bio a
+{
+	display:inline-block;
+	padding-left: 20px;
+	width:25%;
+	min-height: 40px;
+	color:white;
+	text-align: center;
+	line-height: 40px;
+	background-color: black;
+	border-radius: 10px;
+}
+/*----------------- skills code starts here-----------------------*/
+/* Add this to your existing CSS or create a new section for skills styles */
+
+.skills-section {
+    background-color:darkgray;
+    padding: 2em;
+	padding-left: 300px;
+	padding-right: 300px;
+}
+.skills-section h2
+{
+	text-align: center;
+}
+
+.skill {
+    margin-bottom: 2em;
+}
+
+.skill h3 {
+    margin-bottom: 2em;
+	color:brown;
+}
+
+.progress {
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    width: 0;
+    background-color:darkcyan;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+/*----------------- Certifications code starts here-----------------------*/
+.section {
+    text-align: center;
+    padding:0,50px;
+	background-color: lightgray;
+}
+.section h2
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: lightgray;
+	color:black;
+
+}
+.Certifications
+{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	background-color:lightgray;
+}
+
+
+.Certifications-row {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.Certifications {
+    margin: 0 10px;
+
+}
+.Certifications p
+{
+	padding-bottom: 20px;
+	padding-top: 20px;
+    font-weight: bold;
+	font-size: larger;
+	color:rgba(18, 16, 22, 0.805);
+}
+
+.Certifications img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; 
+}
+/*-------------------------Projects code starts here-----------------------*/
+.section1 {
+    text-align: center;
+    padding:0,50px;
+	background-color:darkgray;
+}
+.section1 h2
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color:darkgray;
+	color:black;
+
+}
+.Projects
+{
+   
+    display: flex;
+    flex-direction: column;
+	background-color: darkgray;
+    align-items: center;
+	
+}
+.Projects-row
+{
+	display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.Projects {
+    margin: 0 10px;
+
+}
+.Projects p
+{
+	padding-bottom: 20px;
+	padding-top: 20px;
+    font-weight: bold;
+	font-size: larger;
+	color:black;
+}
+.Projects img {
+    max-width: 100%;
+    height: 500px;
+	width: 500px;
+    max-height: 300px;
+}
+.Projects a{
+		display:inline-block;
+		width:25%;
+		min-height: 40px;
+		color:white;
+		text-align: center;
+		line-height: 40px;
+		background-color: black;
+		border-radius: 10px;
+	
+}
+/*----------------- contacts code starts here-----------------------*/
+.Contact-section {
+	padding: 40px 0;
+	text-align: center;
+	background-color:lightgray;
+  }
+.Contact-section  h2
+  {
+	padding: 40px 0;
+	text-align: center;
+	background-color:lightgray;
+	padding-bottom: 20px;
+	padding-top: 5px;
+  }
+  .contact-method {
+	margin-bottom: 20px;
+  }
+  
+  .contact-method h3 {
+
+	font-size: 20px;
+	margin-bottom: 10px;
+  }
+  
+  .contact-method p {
+	font-size: 16px;
+	line-height: 1.6;
+	margin-bottom: 10px;
+  }
+  
+  .contact-method a {
+	color: #007bff;
+	text-decoration: none;
+  }
+  
+  .contact-method ul {
+	list-style: none;
+	padding: 0;
+  }
+  
+  .contact-method li {
+	margin-bottom: 5px;
+  }
+  
+/*----------------- foter code starts here-----------------------*/
+#footer
+{
+	width: 100%;
+	min-height: 50px;
+	background-color: black;
+	color:white;
+}
+#footer
+{
+	text-align: center;
+	padding-top: 10px;
+	font-size: larger;
+}
+#top
+{
+	width: 50px;
+	height: 50px;
+	background-color: black;
+	color:white;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	position:fixed;
+	bottom: 50px;
+	right: 20px;
+}
+  
+@media (max-width: 768px) {
+    #converter {
+      margin: 20px auto;
+      padding: 10px;
+      max-width: 80%;
+    }
+  }
+  /* Media Queries for Different Devices */
+/* iPhone SE, XR, 12 Pro */
+@media (max-width: 375px) {
+    .container {
+        font-size: 14px;
+    }
+}
+
+/* Pixel 5, Samsung Galaxy S8, S20 Ultra */
+@media (min-width: 376px) and (max-width: 767px) {
+    .container {
+        font-size: 16px;
+    }
+}
+
+/* iPad Air, iPad Mini (Portrait) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        font-size: 18px;
+    }
+}
+
+/* iPad Air, iPad Mini (Landscape) */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .container {
+        font-size: 20px;
+    }
+}
+
+/* Nest Hub */
+@media (max-width: 480px) {
+    .container {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+    .container {
+        width: 70%;
+        font-size: 22px;
+    }
+}
